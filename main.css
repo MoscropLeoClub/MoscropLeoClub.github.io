@@ -85,7 +85,17 @@ main section h3#welcome {
 }
 
 h3 {
-	font-size: 1.75em;
+	font-size: 2.5em;
+	text-align: center;
+	line-height: 2em;
+	margin-top: 5%;
+}
+
+div.cover_photo {
+	width: 70%;
+	height: 31em;
+	margin: 0% auto;
+	margin-bottom: 10%;
 }
 
 main section div#current {
