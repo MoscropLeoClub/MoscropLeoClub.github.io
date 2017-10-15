@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf8">
+    <title>Moscrop Leo Club</title>
+	  <link rel="stylesheet" href="contact.css">
+  </head>
+
+  <body>
+	<nav class="dark_bg">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+		<li><a href="calendar.html">Calendar</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="photos.html">Photos</a></li> -->
+	  </ul>
+	  <ul>
+	    <li><a href="mailto:moscropleoclub@gmail.com">moscropleoclub@gmail.com</a></li>
+        <li>
+		  <a href="https://www.facebook.com/Moscrop-Leo-Club-2016-2017-1858224734409609/">
+	        <img class="facebook_link" style= "width: 0.5em; height: 1em;" src="http://i.imgur.com/Ywqud84.png" alt="Link to Facebook page">
+      </a>
+		</li>
+	  </ul>
+    </nav>
+	
+	<header class="dark_bg">
+	  <img style="width: 5.4em; height: 5em;" src="https://i.imgur.com/29fgqHQ.png" alt="Image of Leo Club logo">
+      <h1>Moscrop Leo Club<h1>
+      <p id="motto">Leadership. Experience. Opportunity.</p>
+	</header>
+	
+	<main>
+	  <div id="map"></div>
+		  <script>
+					function initMap() {
+			  var moscrop = {lat: 49.2433, lng: -123.0047};
+				var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 15,
+				center: moscrop
+				});
+				var marker = new google.maps.Marker({
+					position: moscrop,
+					map: map
+			});
+		  }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDStgmHlHea65xqePH5sVlwQKXQHzSCUmE&callback=initMap">
+        </script>
+		
+	  <section class="light_bg">
+		<h2 class="title">Contact Us</h2>
+	    <div class="contact">
+	      <p>
+	        If you have any inquiries, you can contact us at 
+	    	<a href="mailto:moscropleoclub@gmail.com">moscropleoclub@gmail.com</a>
+			or find us on
+			<a href="https://www.facebook.com/Moscrop-Leo-Club-2016-2017-1858224734409609/">Facebook</a>
+			!
+		  </p><br>
+		  <p>
+		    <span style="font-weight: bold;">Sponsor Teacher:</span><br><br>
+			Ms. Clowers<br><br><br>
+		    <span style="font-weight: bold;">Board of Directors:</span><br><br>
+			President: Jeffrey Peng<br>
+		    Vice President: Jason Yu<br>
+			Presidential Advisor: Jeffrey Fan<br>
+			Information Technology: Jennifer Wu<br>
+			Secretary: Brenden Chau<br>
+			Vice Secretary: Jason Yuan<br>
+			Treasurer: Bryan Xu<br>
+			Internal Affairs: Ansley Wong<br>
+			Vice Internal Affairs: Daniel He<br>
+			External Affairs: Sean Chen<br>
+		  </p>
+		</div>
+      </section>
+	</main>
+
+    <footer class="dark_bg">
+      <a href="mailto:moscropleoclub@gmail.com">moscropleoclub@gmail.com</a><br>
+      <a href="https://goo.gl/maps/rJ7iF2BwFwS2">4433 Moscrop St<br>Burnaby, V5G 2G3<br>Canada</a><br>
+      <a href="https://www.facebook.com/Moscrop-Leo-Club-2016-2017-1858224734409609/">
+	    <img class="facebook_link" style="width: 0.5em; height: 1em;"src="http://i.imgur.com/Ywqud84.png" alt="Link to Facebook page">
+      </a>
+    </footer>
+  </body>
+
+</html>
